@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   res.json(members);
 });
 
-// Get single member
+// Get a single member
 router.get('/:id', (req, res) => {
   const found = members.some((member) => member.id === parseInt(req.params.id));
 
